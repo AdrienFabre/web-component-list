@@ -1,0 +1,27 @@
+{
+  "name": "web-component-list",
+  "version": "1.0.0",
+  "description": "This is a small UI that adds people to a data grid.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --env.mode development",
+    "prod": "webpack --env.mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AdrienFabre/web-component-list.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AdrienFabre/web-component-list/issues"
+  },
+  "homepage": "https://github.com/AdrienFabre/web-component-list#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.36.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
