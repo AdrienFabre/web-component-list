@@ -1,6 +1,6 @@
 # Web Component List
 
-This is a small UI that adds people to a data grid using [Vaadin Components](https://vaadin.com/components), with a feed using [News Api](https://newsapi.org/)
+This is a small UI that adds people to a data grid using [Vaadin Components](https://vaadin.com/components), with a feed using [News Api](https://newsapi.org/).
 
 ## Run
 
