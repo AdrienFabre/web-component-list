@@ -1,9 +1,12 @@
 import "@vaadin/vaadin-button";
 import "@vaadin/vaadin-grid";
 import "@vaadin/vaadin-text-field";
+import { topHeadlinesUrl } from "./newsAPI.js";
+import "./news-article.js";
 
 window.addEventListener("load", () => {
   initUI();
+  fetchNews();
 });
 
 function initUI() {
@@ -25,5 +28,20 @@ function initUI() {
     grid.items = people;
     firstNameField.value = "";
     lastNameField.value = "";
+  });
+}
+
+async function fetchNews() {
+  const res = await fetch(topHeadlinesUrl);
+  const json = await res.json();
+
+  const main = document.querySelector("main");
+
+  json.articles.forEach(article => {
+    const el = document.createElement("news-article");
+    el.article = article;
+    console.log(el);
+    console.log(main);
+    main.appendChild(el);
   });
 }

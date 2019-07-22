@@ -1,10 +1,16 @@
+const Dotenv = require("dotenv-webpack");
+
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = ({ mode }) => {
   return {
+    node: {
+      fs: "empty"
+    },
     mode,
     plugins: [
+      new Dotenv(),
       new HtmlWebpackPlugin({
         template: "./src/index.html"
       }),
@@ -16,6 +22,7 @@ module.exports = ({ mode }) => {
         }
       ])
     ],
+
     devtool: mode === "development" ? "source-map" : "none"
   };
 };
