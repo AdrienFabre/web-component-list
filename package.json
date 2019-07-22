@@ -19,9 +19,16 @@
   },
   "homepage": "https://github.com/AdrienFabre/web-component-list#readme",
   "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^2.2.10",
+    "copy-webpack-plugin": "^5.0.3",
     "html-webpack-plugin": "^3.2.0",
     "webpack": "^4.36.1",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.7.2"
+  },
+  "dependencies": {
+    "@vaadin/vaadin-button": "^2.2.0",
+    "@vaadin/vaadin-grid": "^5.4.6",
+    "@vaadin/vaadin-text-field": "^2.4.8"
   }
 }
